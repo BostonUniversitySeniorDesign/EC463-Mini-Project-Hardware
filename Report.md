@@ -15,4 +15,7 @@ GSU Result:
 ECE Lab Result:
 ![Figure_2](https://user-images.githubusercontent.com/55505652/133662450-d2283e5e-bba1-4a01-827c-caf6bbd4fd0c.png)
 
+
+As shown in the graphs, the amount of BSSIDs seen across time fluctuates. There was more activity shown in the GSU than in the ECE lab.
+
 Overall, working with the Raspberry Pi hardware along with navigating how to control it in the terminal were useful skills for going forward.
