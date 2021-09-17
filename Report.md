@@ -1,7 +1,7 @@
 The goals of the Mini-Project are to work with Raspberry Pi hardware and Python to use the Raspberry Pi as a wireless sensor for WiFi and Bluetooth.
 
 After setting up the Raspberry Pi through installing the software onto the microSD card, the functions provided on the Senior Design Github page were utilized.
-First, we collected nearby WiFi signals wirelessly using the Raspberry Pi. We collected data in BU's GSU and in the ECE Senior Design Lab. For the GSU data we used the script [scan_code.py](scan_code.py) so each loop is stored in a different file since we set N=1, better explanation of that code will be addressed later in the report. The combination of all the files in one can be found in [wifi_combined_GSU.json](wifi_combined_GSU.json) and each single file can be found in [wifi_data](wifi_data). The JSON file from the ECE Lab is in [wifi_2021-09-16T13_34_30.json](wifi_2021-09-16T13_34_30.json). We also did another WiFi scan in the ECE Senior Design Lab for over 30 minutes with its data included in [wifi_2021-09-16T14_07_54.json](wifi_2021-09-16T14_07_54.json).
+First, we collected nearby WiFi signals wirelessly using the Raspberry Pi. We collected data in BU's GSU and in the ECE Senior Design Lab. For the GSU data we used the script [scan_code.py](scan_code.py) so each loop is stored in a different file since we set N=1, better explanation of that code will be addressed later in the report. The combination of all the files in one can be found in [wifi_combined_GSU.json](wifi_combined_GSU.json) and each single file can be found in [wifi_data](wifi_data). The JSON file from the ECE Lab is in [wifi_2021-09-16T13_34_30.json](wifi_2021-09-16T13_34_30.json). We also did another WiFi scan in the ECE Senior Design Lab for over 30 minutes with its data included in [wifi_2021-09-16T14_07_54.json](wifi_2021-09-16T14_07_54.json), and data from the Myles Standish Dorm is included in [wifi_data_Myles.json](wifi_data_Myles.json).
 
 
 Once the scanning was complete, the data was saved to a JSON file which we saved to our Laptop's Desktop. We initally tried to copy the file over Secure Copy (scp); however, we could not get the command to work correctly. Therefore, we copied the JSON files via Google Drive. To being able to copy the files while not being in the lab (with the monitor+keyboard set up) we found another way that worked to copy the files from Raspberry Pi to Mac via SSH File Transfer Protocol (sftp).
@@ -18,9 +18,11 @@ ECE Lab Result (15 minutes):
 ECE Lab Result (50+ minutes):
 ![Figure_3](https://user-images.githubusercontent.com/55505652/133671432-0338ecb7-63a0-4f0c-a3fb-fbbf4fe74978.png)
 
+Myles Standish Hall:
+![Figure_4](https://user-images.githubusercontent.com/55505652/133857644-5aaba18d-f08e-44c0-86fe-7be671d89f14.png)
 
 
 
-As shown in the graphs, the amount of BSSIDs seen across time fluctuates. There was more activity shown in the GSU than in the ECE lab. In the GSU, there was a greater maximum of 8 BBSIDs than in the ECE lab of 7 and then 5. Additionally, the GSU's data never hit zero after the beginning of the scan, wheresas in the ECE lab, the amount of new BSSIDs hit zero many times throughout the duration of the scan. When the Raspberry Pi scanned for the longer duration, the graph and trends are shown clearer and more accurately. The average of new BSSIDs comes to around 1. In the data with the shorter scan time, the average is less accurate.
+As shown in the graphs, the amount of BSSIDs seen across time fluctuates. There was more activity shown in the Myles Standish dorm and GSU than in the ECE lab. In the Myles Standish dorm and GSU, there was a greater maximum of 8 BBSIDs than in the ECE lab of 7 and then 5. Additionally, the GSU's data never hit zero after the beginning of the scan, wheresas in the ECE lab, the amount of new BSSIDs hit zero many times throughout the duration of the scan. When the Raspberry Pi scanned for the longer duration, the graph and trends are shown clearer and more accurately. The average of new BSSIDs comes to around 1. In the data with the shorter scan time, the average is less accurate.
 
 Overall, working with the Raspberry Pi hardware along with navigating how to control it in the terminal were useful skills for going forward.
