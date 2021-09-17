@@ -1,13 +1,13 @@
 The goals of the Mini-Project are to work with Raspberry Pi hardware and Python to use the Raspberry Pi as a wireless sensor for WiFi and Bluetooth.
 
 After setting up the Raspberry Pi through installing the software onto the microSD card, the functions provided on the Senior Design Github page were utilized.
-First, we collected nearby WiFi signals wirelessly using the Raspberry Pi. We collected data in BU's GSU and in the ECE Senior Design Lab for about 15 minutes each. The JSON file fron the GSU is included in **wifi_2021-09-15T11_36_16.json**, and the JSON file from the ECE Lab is in **wifi_2021-09-16T13_34_30.json**. We also did another WiFi scan in the ECE Senior Design Lab for over 30 minutes with its data included in **wifi_2021-09-16T14_07_54.json**.
+First, we collected nearby WiFi signals wirelessly using the Raspberry Pi. We collected data in BU's GSU and in the ECE Senior Design Lab. The JSON file fron the GSU is included in [a relative link](wifi_2021-09-15T11_36_16.json), and the JSON file from the ECE Lab is in [a relative link](wifi_2021-09-16T13_34_30.json). We also did another WiFi scan in the ECE Senior Design Lab for over 30 minutes with its data included in [a relative link](wifi_2021-09-16T14_07_54.json).
 
 
-Once the scanning was complete, the data was saved to a JSON file which we saved to our Laptop's Desktop. We initally tried to copy the file over SSH; however, we could not get the command to work correctly. Therefore, we copied the JSON files via Google Drive.
-After copying the files to our laptop's desktop, we were able to run the function **wifi_scan.py** in our laptop's terminal.
+Once the scanning was complete, the data was saved to a JSON file which we saved to our Laptop's Desktop. We initally tried to copy the file over Secure Copy (scp); however, we could not get the command to work correctly. Therefore, we copied the JSON files via Google Drive. To being able to copy the files while not being in the lab (with the monitor+keyboard set up) we found another way that worked to copy the files from Raspberry Pi to Mac via SSH File Transfer Protocol (sftp).
+After copying the files to our laptop's desktop, we were able to run the function [a relative link](wifi_scan.py) in our laptop's terminal.
 
-Additionally, we created the script **scan_code.py** so that the wifi scanning and bluetooth scanning could be done all at once.
+Although in the wifi file we could specify the number of loops in the N parameter, in the bluetooth file we couldn't, that's why we created the script [a relative link](scan_code.py) so that the wifi scanning and bluetooth scanning could be done all at once without having to run ourselves the bluetooth command every minute/half a minute.
 
 GSU Result:
 ![Figure_1](https://user-images.githubusercontent.com/55505652/133662423-a322d3da-cd5d-4e0f-8ef1-e844e4ca7895.png)
@@ -15,7 +15,7 @@ GSU Result:
 ECE Lab Result (15 minutes):
 ![Figure_2](https://user-images.githubusercontent.com/55505652/133662450-d2283e5e-bba1-4a01-827c-caf6bbd4fd0c.png)
 
-ECE Lab Result (30+ minutes):
+ECE Lab Result (50+ minutes):
 ![Figure_3](https://user-images.githubusercontent.com/55505652/133671432-0338ecb7-63a0-4f0c-a3fb-fbbf4fe74978.png)
 
 
