@@ -21,6 +21,6 @@ ECE Lab Result (30+ minutes):
 
 
 
-As shown in the graphs, the amount of BSSIDs seen across time fluctuates. There was more activity shown in the GSU than in the ECE lab.
+As shown in the graphs, the amount of BSSIDs seen across time fluctuates. There was more activity shown in the GSU than in the ECE lab. In the GSU, there was a greater maximum of 8 BBSIDs than in the ECE lab of 7 and then 5. Additionally, the GSU's data never hit zero after the beginning of the scan, wheresas in the ECE lab, the amount of new BSSIDs hit zero many times throughout the duration of the scan. When the Raspberry Pi scanned for the longer duration, the graph and trends are shown clearer and more accurately. The average of new BSSIDs comes to around 1. In the data with the shorter scan time, the average is less accurate.
 
 Overall, working with the Raspberry Pi hardware along with navigating how to control it in the terminal were useful skills for going forward.
