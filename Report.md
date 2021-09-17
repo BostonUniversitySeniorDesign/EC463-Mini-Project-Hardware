@@ -5,7 +5,7 @@ First, we collected nearby WiFi signals wirelessly using the Raspberry Pi. We co
 
 
 Once the scanning was complete, the data was saved to a JSON file which we saved to our Laptop's Desktop. We initally tried to copy the file over Secure Copy (scp); however, we could not get the command to work correctly. Therefore, we copied the JSON files via Google Drive. To being able to copy the files while not being in the lab (with the monitor+keyboard set up) we found another way that worked to copy the files from Raspberry Pi to Mac via SSH File Transfer Protocol (sftp).
-After copying the files to our laptop's desktop, we were able to run the function [wifi_scan.py](wifi_scan.py) in our laptop's terminal.
+After copying the files to our laptop's desktop, we were able to run the function **wifi_scan.py** in our laptop's terminal.
 
 Although in the wifi file we could specify the number of loops in the N parameter, in the bluetooth file we couldn't, that's why we created the script [scan_code.py](scan_code.py) so that the wifi scanning and bluetooth scanning could be done all at once without having to run ourselves the bluetooth command every minute/half a minute.
 
